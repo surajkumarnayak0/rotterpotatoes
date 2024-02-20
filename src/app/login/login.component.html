@@ -1,0 +1,38 @@
+<div class="login-container">
+  <img class="film" src="assets/images/film.png" alt="" />
+  <div class="logo">Rotten Potatoes</div>
+  <div class="desc">
+    Hi, My name is Suraj Nayak, I am a Creative Director With 2 Years of Work
+    Experience for different well-known brands. Consider my portfolio for
+    reference of my work, i can handle any size task, my agency is focused on
+    delivering quality Graphics Design and Website Design Projects that will add
+    value to your Business, Logo design, Poster design, Brochures, Flyers,
+    social media design, Web graphic Design, Rool design, Business card design,
+    Banner design, menu card design, packaging design All i provide innovative
+    solutions to expand business
+  </div>
+  <div class="login-form">
+    <div class="form-group">
+      <label for="uname">Username</label>
+      <input
+        type="text"
+        name="uname"
+        class="form-control"
+        [(ngModel)]="username"
+      />
+    </div>
+    <div class="form-group">
+      <label for="pword">Password</label>
+      <input
+        type="password"
+        name="pword"
+        class="form-control"
+        [(ngModel)]="password"
+      />
+    </div>
+    <div class="btn-container">
+        <div class="error">{{errorMsg}}</div>
+      <button class="btn btn-dark" (click)="login()">Login</button>
+    </div>
+  </div>
+</div>
